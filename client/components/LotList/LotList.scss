@@ -1,0 +1,34 @@
+@import '../../shared/styles/_variables';
+
+.container {
+    > div:last-child{
+        padding: $padding-xs $padding-lg;
+    }
+}
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid #DADADA;
+    padding: $padding-xs $padding-lg;
+    height: $layout-height;
+    
+    > span {
+        font-size: $font-size-md;
+        color: #ACAEB0;
+    }
+}
+
+.search {
+    // border-right: 1px solid #DADADA;
+    background-color: #f4f4f4;
+    input {
+        width: 9rem;
+    }
+    
+    i {
+        color: #ACAEB0;
+        font-size: $font-size-sm;
+        width: $icon-width-sm;
+        margin-left: $margin-xs;
+    }
+}

@@ -1,0 +1,83 @@
+@import '../../../shared/styles/_variables';
+@import '../../../shared/styles/_mixins';
+
+
+.container {
+    border-bottom: 1px solid #EEEEEE;
+    width: 100%;
+    display: block;
+    height: $layout-height;
+    padding: 0 $padding-lg;
+
+    > div {
+        line-height: $layout-height;
+        height: $layout-height;
+        display: inline-block;
+
+        &.tab {
+            display: none;
+        
+            @media (min-width: $screen-sm-min-width) {
+                display: inline-block;
+            }
+        }
+        
+        a {
+            height: 100%;
+            text-decoration: none;
+            color: #ACAEB0;
+        }
+
+        span {
+            font-weight: normal;
+            font-size: $font-size-md;
+        }
+
+        i {
+            font-size: $font-size-sm;
+            margin-right: $margin-sm;
+            color: #DADADA;
+        }
+    }
+}
+
+.default {
+    padding-top: 0.5rem;
+
+    > div {
+        text-align: center;
+        border-bottom: 1px solid #EEEEEE;
+        border-top: 1px solid #EEEEEE;
+        border-left: 1px solid #EEEEEE;
+        border-right: 1px solid #EEEEEE;
+        height: 100%;
+        line-height: 2.5rem;
+        margin-left: 0.5rem;
+        background-color: #F5F6F7;
+
+        @include border-top-left-radius(0.25rem);
+        @include border-top-right-radius(0.25rem);
+
+        a {
+            text-decoration: none;
+            padding: 0 1rem;
+            height: 100%;
+            width: 100%;
+            color: #ACAEB0;
+            opacity: 0.7;
+            font-weight: normal;
+        }
+    }
+}
+
+.active {
+    div {
+        background-color: #FFF;
+        border-bottom: 1px solid #FFF;
+
+        a {
+            color: #272A2D;
+            font-weight: bold;
+        }
+    }
+}

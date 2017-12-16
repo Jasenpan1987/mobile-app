@@ -1,0 +1,39 @@
+@import '../../../../shared/styles/_variables';
+@import '../../../../shared/styles/_colors';
+.container {
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.inner-content {
+  border-top: 1px solid #EEEEEE;
+  padding-bottom: $padding-xs;
+}
+
+.content {
+  padding: $padding-xs $padding-xs 0 $padding-xs;
+}
+
+.section {
+  margin-top: $margin-xs;
+  background-color: #F5F6F7;
+}
+
+.section-title {
+  color: #8E8E91;
+  font-weight: 500;
+  padding: $padding-sm $padding-sm $padding-xs $padding-sm;
+}
+
+.section-item {
+  padding: $padding-xs;
+}
+
+.sign-contract-message {
+  word-wrap: break-word;
+  color: #272A2D;
+  padding: $padding-xs;
+  line-height: 1.2rem;
+  &.error {
+      color: $statusRed;
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../shared/styles/_variables';
+@import '../../shared/styles/_colors';
+
+.button {
+    padding: 0 $padding-sm;
+    height: $button-height-sm;
+    margin-top: $margin-xs;
+    margin-right: $margin-sm;
+}
+
+.button-group {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+
+.toggle {
+    display: inline-block;
+    line-height: 2;
+
+    position: absolute;
+    margin-top: -3.4rem;
+    top: 0;
+    right: 0;
+    
+    @media (min-width: $screen-sm-min-width) {
+        position: relative;
+        margin-top: auto;
+        top: auto;
+        right: auto;
+    }
+}
+
+.toggle-header {
+    margin-right: 0.5px;
+}
+
+.section {
+    margin-bottom: 0.5rem;
+}
+
+.container {
+    padding: $padding-sm $padding-md $padding-xl $padding-md
+}

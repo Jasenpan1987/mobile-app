@@ -1,0 +1,65 @@
+@import '../../../../../shared/styles/_mixins';
+
+.textarea-default {
+    height: 4.5rem;
+    width: 100%;
+    resize: none;
+}
+
+.input-error {
+    &[data-type=error] {
+        color: #EA4D3D
+    }
+}
+
+.input-toggle {
+    vertical-align: middle;
+    height: 100%;
+    background-color: #EEEEEE;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 0.3rem 1rem;
+    margin: 0.2rem;
+    float: left;
+
+    > label {
+        color: #ACAEB0;
+    }
+
+    &.checked {
+        background-color: #0696B7;
+
+        > label {
+            color: #FFF;
+        }
+    }
+
+    &.editable {
+        @include box-shadow(0px 1px 1px 0px #8E8E91);
+    }
+    
+    :after {
+        clear: both;
+    }
+}
+
+.input-checkbox {
+    padding-right: 4.5rem;
+
+    div {
+        display: inline-block;
+
+        &:last-child {
+            float: right;
+            margin-right: -4rem;
+
+            font-size: 1.2rem;
+            
+            transform: 0.5s;
+            -moz-transform: 0.5s;
+            -webkit-transform: 0.5s;
+            -o-transform: 0.5s;
+            -ms-transform: 0.5s;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import '../../shared/styles/_variables';
+
+$progressBarPaddingRight: $padding-xl;
+
+.container {
+    margin-bottom: $padding-lg;
+}
+
+.progress{
+    padding-right: $progressBarPaddingRight;
+
+    > div:first-child{
+        width: 100%; 
+        display: inline-block;
+    }
+
+    > div:last-child{
+        float: right;
+        margin-right: -$progressBarPaddingRight;
+        margin-top: -0.2rem;
+        text-align: center;
+        padding: 2px;
+        width: $progressBarPaddingRight;
+    }
+}
+
+.description{
+    > h2{
+        display: inline-block;
+    }
+
+    > h4{
+        padding-left: 0.5rem;
+        display: inline-block;
+    }
+}

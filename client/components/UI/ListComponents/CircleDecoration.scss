@@ -1,0 +1,45 @@
+@import '../../../shared/styles/_mixins';
+
+$internalLineHeight: 3.4rem;
+$rightDivWidth: 2rem;
+
+.container {
+    position: relative;
+    height: $internalLineHeight;
+}
+
+.text-container {
+    display: table;
+    height: 100%;
+    float: left;
+    padding: 0 1rem;
+}
+
+.text-inner {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 1rem;
+    white-space: nowrap;
+}
+
+.circle-container {
+    border-radius: $internalLineHeight / 2;
+    height: $internalLineHeight;
+    width: $internalLineHeight;
+    float: left;
+
+    span {
+        text-align: center;
+        width: $internalLineHeight - 1rem;
+        font-weight: bold;
+        display: block;
+        max-height: $internalLineHeight - 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+        &.lg{ font-size: 1rem; }
+        &.md{ font-size: 0.9rem; }
+        &.sm{ font-size: 0.8rem; }
+        &.xs{ font-size: 0.7rem; }
+    }
+}

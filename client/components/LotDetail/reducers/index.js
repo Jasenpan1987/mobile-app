@@ -1,0 +1,1 @@
+export { lotDetailReducer } from './lotDetailReducer';

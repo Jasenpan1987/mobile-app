@@ -1,0 +1,31 @@
+@import '../../shared/styles/_variables';
+
+.container {
+    padding: $padding-md $padding-lg;
+}
+
+.header {
+    padding-bottom: $padding-sm;
+    font-size: $font-size-xs;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.body {
+    min-height: 10rem;
+    position: relative;
+}
+
+.footer {
+    padding-right: $padding-xl;
+    padding-top: $padding-xs;
+
+    > span:first-child{
+        font-weight: 800;
+    }
+
+    > span:last-child{
+        margin-right: -$margin-xl;
+        float: right;
+    }
+}

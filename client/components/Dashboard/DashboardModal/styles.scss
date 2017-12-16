@@ -1,0 +1,23 @@
+.body {
+  width: 20rem;
+  max-height: 80vh;
+  margin-top: 0.5rem;
+  > div {
+      padding: 0.5rem;
+  }
+}
+
+.footer {
+  > div {
+      text-align: right;
+
+      > button {
+          width: 6rem;
+      }
+  }
+}
+
+.header {
+  padding: 1rem;
+  color: #0696B7;
+}

@@ -1,0 +1,31 @@
+$internalLineHeight: 3.4rem;
+$rightDivWidth: 2rem;
+
+.link {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.content {
+    height: $internalLineHeight + 1.4rem;
+    padding-right: $rightDivWidth;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+
+    > div {
+        display: inline-block;
+    }
+}
+
+.angle {
+    float: right;
+    position: absolute;
+    right: $rightDivWidth;
+    width: $internalLineHeight;
+    height: $internalLineHeight;
+    line-height: $internalLineHeight;
+    text-align: center;
+    font-size: $rightDivWidth;
+    vertical-align: middle;
+}

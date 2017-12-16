@@ -1,0 +1,39 @@
+@import '../../shared/styles/_variables';
+
+.container {
+    display: inline-block;
+    width: 100%;
+    line-height: $line-height-md;
+    
+    > i {
+        font-size: $font-size-sm; 
+        width: $icon-width-sm;
+        float: left;
+        margin-top: $margin-xs;
+    }
+}
+
+.currency{
+    > span:nth-child(1) {
+        float: left;
+        margin-top: -$margin-xs;
+        font-weight: 700;
+    }
+
+    > span:nth-child(2) {
+        float: left;
+        width: 100%;
+        padding-left: $padding-md;
+        margin-top: -$margin-sm;
+    }
+}
+
+.value{
+    > span:nth-child(1) {
+        font-weight: 700;
+    }
+
+    > span:nth-child(2) {
+        float: right;
+    }
+}

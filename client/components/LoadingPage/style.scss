@@ -1,0 +1,26 @@
+.splash {
+  position: absolute;
+  width: 100vw;
+  height: calc(100vh - 6rem);
+  display: table;
+  background-size: 100%;
+}
+
+
+.logo {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.progressWrapper {
+  height: 0.3rem;
+}
+
+.logo > div {
+  display: table;
+  margin: 0 auto;
+}
+
+.logo > div > img {
+  width: 70vw;
+}

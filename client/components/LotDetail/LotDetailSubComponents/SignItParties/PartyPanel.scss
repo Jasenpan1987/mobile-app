@@ -1,0 +1,75 @@
+@import '../../../../shared/styles/_variables';
+
+.container {
+    background-color: #FFF;
+    padding: 0 $padding-xs;
+}
+
+.status-container {
+    border-bottom: 1px solid #DADADA;
+    width: 100%;
+}
+
+.status-icon {
+    height: 4rem;
+    width: 3rem;
+    i {
+      color: #0696B7;
+      font-size: 2.2rem;
+    }
+}
+
+.status-content {
+    height: 4rem;
+    width: calc(100% - 3rem);
+    padding-left: $padding-xs;
+}
+
+.status-detail {
+    height: 4rem;
+    float: left;
+    line-height: 1.2rem;
+
+    h5 {
+        font-size: 0.8rem;
+    }
+
+    span {
+        padding-left: $padding-xs;
+        font-size: 0.8rem;
+        color: #8E8E91;
+    }
+}
+
+.party-container {
+    height: 4rem;
+    width: 100%;
+}
+
+.party-detail {
+    height: 4rem;
+    width: calc(100% - 7rem);
+    float: left;
+    line-height: 1.5rem;
+    padding-left: $padding-xs;
+
+    span {
+        color: #8E8E91;
+    }
+}
+
+.default {
+    color: #8E8E91;
+}
+
+.success {
+    color: #6CBC3F;
+}
+
+.pending {
+    color: #E89435;
+}
+
+.error {
+    color: #EA4D3D;
+}

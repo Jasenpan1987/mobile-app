@@ -1,0 +1,64 @@
+@import '../../shared/styles/_variables';
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-size: 100%;
+}
+
+.body {
+  display: table;
+  height: 100vh;
+  width: 100vw;
+}
+
+.logo {
+  text-align: center;
+
+  img {
+    width: 50%;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-top: $margin-xl;
+
+  h2 { 
+    font-weight: 100;
+    display: none;
+  }
+}
+
+.login-content {
+  padding: 0 15%; 
+  margin-top: $margin-md;
+
+  > p {
+    margin-bottom: $margin-xs;
+  }
+
+  > .sign {
+    margin-top: $margin-md;
+    height: $button-height-sm;
+  }
+}
+
+@media (min-width: $screen-sm-min-width) {
+  .login-content { 
+    padding: 0 30%;
+  }
+
+  .logo {
+    img {
+      width: 25%;
+    }
+  }
+
+  .title {
+    h2 { 
+      display: block;
+    }
+  }
+};

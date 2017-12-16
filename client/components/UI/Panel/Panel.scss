@@ -1,0 +1,40 @@
+@import '../../../shared/styles/_mixins';
+@import '../../../shared/styles/_colors';
+
+$internalLineHeight: 3.4rem;
+$rightDivWidth: 2rem;
+
+.panelWrapper {
+  width: 70%;
+  height: 40%;
+  font-size: 0.8rem;
+  background: #eff0f1;
+  padding: 0.6rem 0.6rem;
+  margin-bottom: 0.8rem;
+  -webkit-box-shadow: 5px 5px 2px 0px rgba(80, 78, 78, 0.75);
+  -moz-box-shadow: 5px 5px 2px 0px rgba(80, 78, 78, 0.75);
+  box-shadow: 5px 5px 2px 0px rgba(80, 78, 78, 0.75);
+}
+
+.panelBodyContent {
+  width: 75%;
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+.border-default {
+  border: 2px solid transparent;
+}
+
+.border-success {
+  border: 2px solid $statusGreen;
+}
+
+.border-danger {
+  border: 2px solid $pastelRed;
+}
+
+.border-warning {
+  border: 2px solid $statusYellow;
+}
+

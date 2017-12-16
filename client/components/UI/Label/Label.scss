@@ -1,0 +1,97 @@
+
+.label {
+  min-width: 65px;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  text-align: center;
+}
+  
+.default {
+  color: rgb(146, 148, 151);
+  background-color: rgb(245, 246, 248);
+  border: 1px solid rgba(146, 148, 151, .42);
+}
+  
+.success {
+  color: rgb(81, 151, 53);
+  background-color: #f2fff2;
+  border: 1px solid rgba(81, 151, 53, .42);
+}
+  
+.pending {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border: 1px solid rgba(138, 109, 59, .42);
+}
+ 
+.orange {
+  background-color: rgb(244, 133, 42);
+  color: #fcf8e3;
+  border: 1px solid darken(rgb(244, 133, 42), .15);
+}
+  
+.error {
+  color: #a94442;
+  background-color: #f2dede;
+  border: 1px solid rgba(169, 68, 66, .42);
+}
+  
+
+.info {
+  color: #28b2f3;
+  background-color: #e3f4fc;
+  border: 1px solid rgba(83, 132, 165, .42);
+}
+
+.clickable {
+  transition: background-color 100ms ease-in;
+  cursor: pointer !important;
+
+
+  &.default:hover {
+    color: #fff;
+    background-color: #767676;
+  }
+
+  &.success:hover {
+    color: #fff;
+    background-color: #3c763d;
+  }
+
+  &.orange:hover {
+    color: #fff;
+    background-color: rgb(236, 117, 0);
+    border: 1px solid darken(rgb(236, 117, 0), .52);
+  }
+  
+  &.pending:hover {
+    color: #fff;
+    background-color: #8a6d3b;
+  }
+
+  &.error:hover {
+    color: #fff;
+    background-color: #a94442;
+  }
+  
+  &.info:hover{
+    color: #fff;
+    background-color: darken(#28b2f3, 20);
+  }
+}
+.beta {
+  min-width: auto;
+  border: 1px solid betaTagColor;
+  border-radius: 2px;
+  background-color: betaTagColor;
+  color: #fff;
+  text-transform: lowercase;
+  position: relative;
+  font-weight: 300;
+  padding: 0 2px;
+  font-size: 1rem;
+  line-height: 1.1;
+}

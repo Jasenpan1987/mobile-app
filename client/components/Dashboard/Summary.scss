@@ -1,0 +1,11 @@
+@import '../../shared/styles/_variables';
+
+.header {
+    width: 100%;
+    text-align: center; 
+    padding: $padding-xl 0;
+
+    >p {
+        font-size: $font-size-sm;
+    }
+}

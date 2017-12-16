@@ -1,0 +1,19 @@
+@import '../../shared/styles/_variables';
+
+$containerPaddingHorizontal : 0 $padding-lg;
+
+.container {
+    line-height: $line-height-lg;
+    min-height: 100vh;
+}
+
+.containerHeader {
+    padding: $containerPaddingHorizontal; 
+    padding-bottom: $padding-xs;
+    background-size: 100%;
+}
+
+.containerChart {
+    padding: $containerPaddingHorizontal;
+    padding-bottom: $padding-xl;
+}

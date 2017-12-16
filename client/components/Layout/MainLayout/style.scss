@@ -1,0 +1,65 @@
+@import '../../../shared/styles/_variables';
+@import '../../../shared/styles/_mixins';
+
+.title {
+    height: $layout-height;
+    overflow: initial; 
+}
+
+.logo {
+    text-align: center; 
+    line-height: $layout-height; 
+
+    a {
+        vertical-align: middle;
+        line-height: $layout-height;
+        >img {
+            height: 80%;
+        }
+    }
+}
+
+.layoutRight {
+    > span {
+        margin-right: $margin-sm;
+        line-height: $layout-height; 
+        vertical-align: middle;
+        opacity: 0.7;
+    }
+
+    > i {
+        font-size: $font-size-sm;
+        line-height: $layout-height; 
+        vertical-align: middle;
+        margin-right: $margin-sm;
+    }
+}
+
+.dropdown {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.dropdown-content {
+    float: right;
+    position: absolute;
+    @include box-shadow(0px 8px 16px 0px rgba(0,0,0,0.2));
+    top: $layout-height;
+    right: 0;
+    height: $line-height-lg * 2;
+    width: 8rem;
+
+    > ul {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.login-icon {
+    display: inline-block;
+    margin-left: 1rem;
+}

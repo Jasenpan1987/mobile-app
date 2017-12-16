@@ -1,0 +1,36 @@
+@import '../../../../shared/styles/_variables';
+
+.no-record-found {
+    padding: 1rem;
+    text-align: center;
+    color: #ACAEB0;
+
+    > div:first-child{
+        i {
+            font-size: 3rem 
+        }
+    }
+
+    > div:last-child {
+        padding-top: 1rem;
+        span {
+            font-size: 1.2rem
+        }
+    }
+}
+
+.section-title-container {
+    line-height: $line-height-md;
+
+    h1, h2, h3, h4, h5 {
+        display: inline-block;
+        text-transform: capitalize;
+    }
+}
+
+.list-decoration {
+    padding: 0 $padding-xs;
+    color: #FFA500;
+    font-weight: bold;
+    font-size: $font-size-sm;
+}

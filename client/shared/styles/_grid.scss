@@ -1,0 +1,80 @@
+@import './variables';
+
+.row {
+    overflow: hidden;
+
+    :after {
+        clear: both;
+    }
+}
+
+@mixin custom-grid ($name, $columns)
+{
+    @function get-size($size)
+    {
+        @return 0% + 100 / $columns * $size;
+    }
+
+    .hidden-#{$name} {
+        display: none;
+    }
+    
+    .pull-right-#{$name} {
+        float: right;
+    };
+    
+    .push-left-#{$name} {
+        float: left;
+    };
+    
+    @for $i from 1 through $columns {
+        .col-#{$name}-#{$i} {
+            width: get-size($i);
+            float: left;
+            position: relative;
+            padding-left: 5px;
+            padding-right: 5px;
+            display: block;
+        }
+    }
+    
+    @for $i from 1 through $columns {
+        .col-#{$name}-pull-#{$i} {
+            right: get-size($i);
+        }
+    }
+    
+    .col-#{$name}-pull-0 {
+        right: auto;
+    }
+    
+    @for $i from 1 through $columns {
+        .col-#{$name}-push-#{$i} {
+            left: get-size($i);
+        }
+    }
+    
+    .col-#{$name}-push-0 {
+            left: auto;
+    }
+    
+    @for $i from 0 through $columns {
+        .col-#{$name}-offset-#{$i} {
+            margin-left: get-size($i);
+        }
+    }
+}
+
+@include custom-grid(xs, 12);
+
+@media (min-width: $screen-sm-min-width) { 
+    @include custom-grid(sm, 12);
+}
+
+@media (min-width: $screen-md-min-width) { 
+    @include custom-grid(md, 12);
+}
+
+@media (min-width: $screen-lg-min-width) { 
+    @include custom-grid(lg, 12);
+}

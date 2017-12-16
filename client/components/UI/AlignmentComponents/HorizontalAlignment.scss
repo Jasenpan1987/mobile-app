@@ -1,0 +1,18 @@
+.middle {
+    display: table;
+    margin: 0 auto;
+}
+
+.left {
+    display: table;
+    margin-right: auto;
+}
+
+.right {
+    display: table;
+    margin-left: auto;
+}
+
+.inner {
+    position: relative;
+}

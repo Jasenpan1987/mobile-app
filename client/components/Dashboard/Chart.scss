@@ -1,0 +1,29 @@
+@import '../../shared/styles/_variables';
+
+.container {
+    margin-top: $margin-sm;
+    height: $chart-area-height;
+}
+
+.legend { 
+    width: 100%; 
+    height: 100%;
+    display: inline-block;
+
+    @media (min-width: $screen-sm-min-width)
+    {
+        width: 45%; 
+    }
+}
+
+.chart {
+    width: 55%;
+    float: right;
+    display: none;
+    height: 100%;
+
+    @media (min-width: $screen-sm-min-width)
+    {
+        display: table;
+    }
+}

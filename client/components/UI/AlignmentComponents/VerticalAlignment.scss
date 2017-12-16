@@ -1,0 +1,22 @@
+.container {
+    display: table;
+}
+
+.inner {
+    position: relative;
+}
+
+.top {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bottom {
+    display: table-cell;
+    vertical-align: bottom;
+}
